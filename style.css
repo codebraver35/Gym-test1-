@@ -1,3 +1,4 @@
+/* body styling*/
 body {
     overflow-x: hidden;
     margin: 0;
@@ -5,14 +6,17 @@ body {
     color: #fff;
     background-color: #181818;
 }
+/* hero section styling*/
 .hero{
   position: relative;
 }
+/*logo adjustments*/
 .logo{
   width: 150px;
   background: url(new-logoo.png);
  
 }
+/* header designing*/
 header.hero {
     background-color: black !important;
     background: url('Gym-full-HD.jpg') no-repeat center center/cover;
@@ -23,6 +27,7 @@ header.hero {
     justify-content: space-between;
     text-align: center;
 }
+/* navbar style*/
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -32,7 +37,7 @@ header.hero {
     
 }
 
-
+/* logo adjustment*/
 #my-logo{
   height: 250px;
   width: 250px;
@@ -150,6 +155,10 @@ header.hero {
   }
   #white-wp{
     display: none;
+  }
+  #About-txt{
+    font-size: 16px;
+    margin-right: 5%;
   }
 
 }
@@ -311,17 +320,78 @@ header.hero {
     
 
   }
-  #vid{
-    display: flex;
-    height: 500px;
+  #about-footer{
+
     width: 100vw;
-    background:rgb(241, 140, 140);
+    z-index: 2000;
+    
+    
+    }
+  @media (max-width:900px){
+    #about-footer{
+      margin-top: 20% !important;
+    }
+  }
+  @media (max-width: 1220px){
+    #about-footer{
+      margin-top: 10%;
+    }
+    #About-txt{
+      margin-left: 13%;
+      padding-top: 3%;
+      font-size: 20px;
+    }
+    #aboutus{
+      margin-left: 32%;
+      font-size: 35px;
+    }
+    #info{height: 0px !important;
+    }
+  #videox{
+    display: none !important;
+    width: 100px!important;
+    height: 10px;
+  }
+#vid{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 20%;
+}
+#info{
+  height: 120px;
+  position: relative;
+  margin-top: 70%;
+  width: 100xw;
+}
+#about10{
+  width: 100vw !important;
+  background-color: #000000;
+  position: absolute;
+  left: 0px;
+  margin-left: -20% !important;
+}
+#videox{
+  height: 500px !important;
+  width: 50vw !important;
+}
+  }
+  #about10{
+    background-color: #000000;
+  }
+  #vid{
+    display:flex;
+    
+    height: 595px;
+    width: 100vw;
+    background:#181818;
     margin-top: 30px;
   }
+  
   #info{
     background-color: rgb(0, 0, 0);
-    height:100vh ;
-    width: 100vw;
+    height:100% ;
+    width: 50vw;
     position: relative;
    
   }
@@ -374,10 +444,16 @@ header.hero {
     margin-top: 10%;
     color: #ff4500;
   }
+  
+
+  
 #yt{
-    height: 100vh;
-    width: 50vw;
+    height: 10px !important;
+    width: auto !important;
     background-color: rgb(0, 0, 0);
+}
+#about3{
+  display: flex;
 }
 #classes{
   background: url(trainer.jpg);
@@ -820,14 +896,7 @@ footer {
   background-color: rgb(75, 75, 75);
 
 }
-#about-footer{
-position: absolute;
-top: 1550px;
-width: 100vw;
-z-index: 2000;
 
-
-}
 #classes{
   background: url(gym-bg2.jpg) no-repeat;
   background-size: 100vw;
